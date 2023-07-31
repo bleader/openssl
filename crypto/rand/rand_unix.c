@@ -22,7 +22,7 @@
 #include "internal/dso.h"
 #if defined(__linux) && !defined(OPENSSL_SYS_UEFI)
 # include <sys/syscall.h>
-# include <sys/random.h>
+# include <linux/random.h>
 # ifdef DEVRANDOM_WAIT
 #  include <sys/shm.h>
 #  include <sys/utsname.h>
